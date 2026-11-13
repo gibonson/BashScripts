@@ -10,7 +10,7 @@ When the available disk space falls below a configured threshold, the script imm
 Pushover is a notification service that allows servers and scripts to send instant push notifications directly to user devices.
 Pushover offers a fully functional 30-day free trial, making it easy to test before purchasing a license.
 
-## Manual
+## 1.Manual check_disk_pushover_notification.sh
 
 1. Copy the [script](/check_disk_pushover_notification.sh) to the `/opt` directory:
 
@@ -54,3 +54,6 @@ Pushover offers a fully functional 30-day free trial, making it easy to test bef
 ### That's it!
 
 The system will now check disk space automatically and send a notification when free space falls below the configured threshold.
+
+## 1.Manual port_monitor_pushover_notification.sh
+~/.local/state/port-monitor/ 
