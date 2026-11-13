@@ -123,7 +123,7 @@ Sends Pushover notifications when services become unavailable or recover.
    Add the following line:
 
    ```cron
-   0 * * * * /opt/port_monitor_pushover_notification.sh
+   0 * * * * /bin/bash /opt/port_monitor_pushover_notification.sh
    ```
 
    This will run the script every hour.
