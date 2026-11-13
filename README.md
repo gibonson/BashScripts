@@ -105,7 +105,7 @@ Sends Pushover notifications when services become unavailable or recover.
 4. Run the script manually to test:
 
    ```bash
-   /opt/port_monitor_pushover_notification.sh
+   ./opt/port_monitor_pushover_notification.sh
    ```
 
 5. Previous monitoring states are stored in:
