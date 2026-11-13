@@ -14,7 +14,7 @@ Pushover offers a fully functional 30-day free trial, making it easy to test bef
 This script automatically monitors free disk space on Linux servers.
 When the available disk space falls below a configured threshold, the script immediately sends a push notification to the administrator.
 
-1. Copy the [script](/check_disk_pushover_notification.sh) to the `/opt` directory:
+1. Copy the [script](/check_disk_pushover_notification.sh) to the `/opt` directory.
 1. Open the script for editing:
     `nano /opt/check_disk_pushover_notification.sh`
     Set the following variables:
@@ -42,21 +42,21 @@ When the available disk space falls below a configured threshold, the script imm
 A lightweight Bash script for monitoring IP addresses and TCP ports across your network.
 Sends Pushover notifications when services become unavailable or recover.
 
-1. Copy the [script](/port_monitor_pushover_notification.sh) to the `/opt` directory:
-2. Open the script for editing:
+1. Copy the [script](/port_monitor_pushover_notification.sh) to the `/opt` directory.
+1. Open the script for editing:
     `nano /opt/check_disk_pushover_notification.sh`
     Set the following variables:
     - `PUSHOVER_USER_KEY` – Your Pushover user key.
     - `PUSHOVER_APP_TOKEN` – Your Pushover application token.
     - `TARGETS` -  – device list.
-  information about statuses is stored here   
+    information about statuses is stored here   
     `~/.local/state/port-monitor/`
-3. Make the Script Executable:
+1. Make the Script Executable:
     `chmod +x /opt/check_disk_pushover_notification.sh`
-4. Schedule Automatic Checks
+1. Schedule Automatic Checks
     Edit the cron configuration:
     `crontab -e`
     Add the following line:
     `0 * * * * /opt/check_disk_pushover_notification.sh`
     This will run the script every hour.
-6. Enjoy ☕
+1. Enjoy ☕
